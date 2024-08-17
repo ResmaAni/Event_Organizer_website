@@ -1,0 +1,406 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #008080;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Background Add */
+
+
+#service{
+    text-align: center;
+    padding: 50px 0; 
+    font-size: 30px;
+    color: #000;
+
+}
+
+
+  .services-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.services-col {
+    height: 17rem;
+    color: rgb(236, 68, 90);
+    background: url("back-2.png");
+    background-color: lightgray;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    flex: 1 1 25rem;
+    padding: 1.2rem;
+    margin: 1.5rem;
+}
+  
+
+
+
+.services-col i {
+    padding: 2.2rem;
+    border: none;
+    background: aliceblue;
+    border-radius: 4rem;
+    font-size: 2rem;
+}
+
+.services-col h2 {
+   
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.services-col p {
+    font-size: 1rem;
+    color: #000;
+}
+
+@media (max-width:767px) {
+    .service {
+        margin-bottom: 30rem;
+    }
+}
+
+#Gallery{
+  text-align: center;
+  padding: 15px 0; 
+  font-size: 30px;
+  color: #000;
+}
+
+
+.gallery .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 1.5rem;
+  padding: 40px; 
+}
+
+.gallery .box-container .box {
+  position: relative;
+  border: 1rem solid #333;
+  border-radius: 0.5rem;
+  height: 25rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.gallery .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.gallery .box-container .box:hover img {
+  transform: scale(1.1);
+  filter: grayscale();
+}
+
+.gallery .box-container .box .title {
+  position: absolute;
+  top: -10rem;
+  left: 0;
+  right: 0;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.gallery .box-container .box:hover .title {
+  top: 0;
+}
+
+.gallery .box-container .box .icons {
+  position: absolute;
+  bottom: -10rem;
+  left: 0;
+  right: 0;
+  background: #333;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.gallery .box-container .box:hover .icons {
+  bottom: 0;
+}
+
+.gallery .box-container .box .icons a {
+  font-size: 2rem;
+  margin: 0.5rem 1rem;
+  color: #fff;
+}
+
+.gallery .box-container .box .icons a:hover {
+  color: var(--theme-color);
+}
+
+#price{
+  text-align: center;
+  padding: 15px 0; 
+  font-size: 30px;
+  color: #000;
+}
+
+
+
+
+.price .box-container {
+  display: grid;
+  padding: 15px 10rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.2rem;
+  
+}
+
+.price .box-container .box {
+  padding: 1rem 0;
+  background:black;
+  border: 1rem solid #333; 
+  border-radius: 0.5rem;
+  text-align: center;
+  width: 95%; /* Adjust as needed */
+  height: 30rem;
+  
+ 
+}
+
+.price .box-container .box:hover {
+  transform: scale(1.03);
+}
+
+.price .box-container .box .title {
+  background: var(--theme-color);
+  color: #fff;
+  
+  font-size: 2rem;
+}
+
+.price .box-container .box .amount {
+  color: rgb(245, 117, 117);
+  padding-top: 0.5rem;
+  font-size: 2rem;
+}
+
+.price .box-container .box ul {
+  list-style-type: none;
+  padding: 0.4rem 0;
+}
+
+.price .box-container .box ul li {
+  font-size: 1rem;
+  color: #eee;
+  padding: 1rem 0;
+}
+
+.price .box-container .box ul li i {
+  color: rgb(245, 117, 117);
+  padding-right: 0.5rem;
+}
+
+.box .btn{
+  background-color: rgb(245, 117, 117); /* Green background */
+    border: none; /* No borders */
+    color: white; /* White text */
+    padding: 10px 32px; /* Top and Bottom padding: 15px, Right and Left padding: 32px */
+    text-align: center; /* Center-aligned text */
+    text-decoration: none; /* No underline on the text */
+    display: inline-block; /* Allows the button to resize according to its content */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Margin around the button */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth background color change on hover */
+}
+
+
+.box .btn:hover {
+  background-color: #45a049; 
+}
+
+/* contact  */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-container label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-container input,
+.contact-container textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-container button {
+  padding: 10px 15px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-container button:hover {
+  background-color: #555;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Admin Login Section */
+.admin-login {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.admin-login h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-btn {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #555;
+}
+
